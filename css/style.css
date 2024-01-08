@@ -55,11 +55,12 @@ a{
 }
 /* STYLE SETTINGS */
 .container{
-    padding:0 40px;
+    padding-top:80px;
     width:100%;
-    height:100%;
+    min-height:100%;
     display:flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-content:flex-start;
     align-items:center;
     position:relative;
 }
@@ -99,6 +100,49 @@ a{
     margin:25px 0;
     font-size:2.25em;
 }
+/* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px 40px;
+}
+
+.input-field {
+    border: 2px solid var(--clr-gray);
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    max-width: 500px; /* Adjust max width as necessary */
+    font-size: 1em;
+}
+
+.input-field::placeholder {
+    color: var(--clr-lgray);
+}
+
+.gen-btn {
+    background: none;
+    border: 2px solid var(--clr-gray);
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.gen-btn:hover {
+    background-color: var(--clr-cyan2);
+    color: var(--clr-dark);
+}
+
+
 
 /* THEME CHANGER */
 
@@ -110,15 +154,6 @@ a{
 }
 
 /* MEDIA */
-@media (hover:none) and (pointer: coarse){
-    .container{
-        height:90%;
-        padding-top:110px;
+@media (min-width: 768px) {
+    .container {
     }
-}
-@media (min-width:400px){
-    .container{
-        height:90%;
-        padding-top:20%;
-    }
-}
