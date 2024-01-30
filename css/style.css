@@ -1,3 +1,7 @@
+/* IMPORTS */
+@import url('../assets/Components/Navbar/Navbar.css');
+@import url('../assets/Components/Button/Button.css');
+
 /* VARIABLES */
 :root{
     /* ========== COLORS DEFAULT ========== */
@@ -7,7 +11,7 @@
     --clr-dgray:#23252b;
     --clr-gray:#6c757d;
     --clr-lgray:#adb5bd;
-    --clr-light:#f8f9fa;
+    --clr-light:#e1e4e7;
     --clr-white:#fff;
   
       /* Utils */
@@ -54,45 +58,20 @@ a{
     font-weight:600;
 }
 /* STYLE SETTINGS */
+.generation button{
+    text-transform:uppercase;
+    font-size:18px;
+}
+
 .container{
-    padding-top:80px;
     width:100%;
-    min-height:100%;
+    padding:0 50px;
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items:center;
-    position:relative;
-}
-.btn-area{
-    position:absolute;
-    width:50px;
-    height:50px;
-    top:10px;
-    overflow:hidden;
-}
-.btn-round{
-    width:100%;
-    rotate:180deg;
-    animation:roll linear infinite;
-    transition:.25s ease-in;
-}
-.sun, .moon{
-    --_filter:var(--filter,1);
-    
-    display:block;
-    filter:invert(var(--_filter));
-}
-.moon{
-    rotate:180deg;
-}
-.btn{
-    cursor:pointer;
 }
 
-.active-dark{
-    rotate:0deg;
-}
 .content{
     text-align:center;
 }
@@ -121,27 +100,6 @@ a{
     color: var(--clr-lgray);
 }
 
-.gen-btn {
-    background: none;
-    border: 2px solid var(--clr-gray);
-    border-radius: 50%;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    margin-top: 10px;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.gen-btn:hover {
-    background-color: var(--clr-cyan2);
-    color: var(--clr-dark);
-}
-
 .hidden {
     display: none;
 }
@@ -153,9 +111,8 @@ a{
     --bg:var(--clr-light);
     --link:var(--clr-blue);
     --filter:0;
+    --border:var(--clr-dark);
+
 }
 
 /* MEDIA */
-@media (min-width: 768px) {
-    .container {
-    }
