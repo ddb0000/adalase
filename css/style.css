@@ -142,7 +142,9 @@ a{
     color: var(--clr-dark);
 }
 
-
+.hidden {
+    display: none;
+}
 
 /* THEME CHANGER */
 

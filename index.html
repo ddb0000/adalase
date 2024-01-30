@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META DATA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ai influencer creator</title>
-    
-    <!-- ASSETS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -23,10 +20,13 @@
         </section>
         <section class="content">
             <section class="card">
-                <input type="text" id="name" class="input-field" placeholder="name">
-                <input type="text" id="bio" class="input-field" placeholder="bio">
+                <div class="profile">
+                    <img id="profile-pic" class="hidden" src="" alt="Profile Picture">
+                    <p id="name" class="hidden"></p>
+                    <p id="bio" class="hidden"></p>
+                </div>
                 <button id="generate" class="gen-btn">gen</button>
-            </section>            
+            </section>           
             <h1 class="title">ai influencer creator</h1>
             <p>create and manage your own virtual ai influencer.</p>
             <p>unleash the potential of ai in the world of digital influence.</p>
@@ -46,7 +46,7 @@
         </section>
     </main>
 
-    <!-- JS -->
+    <script src="./js/main.js"></script>
     <script src="./js/darkMode.js"></script>
 </body>
 </html>
