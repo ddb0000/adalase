@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --clr-black:#000;
   --clr-dark:rgb(6, 6, 6);
