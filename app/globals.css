@@ -1,10 +1,10 @@
 :root{
   --clr-black:#000;
-  --clr-dark:#282c34;
+  --clr-dark:rgb(6, 6, 6);
   --clr-dgray:#23252b;
-  --clr-gray:#6c757d;
+  --clr-gray:#474747;
   --clr-lgray:#adb5bd;
-  --clr-light:#f8f9fa;
+  --clr-light:#D9D9D9;
   --clr-white:#fff;
 
   --clr-success:rgb(25 135 84);
@@ -49,7 +49,6 @@ a{
 .container{
   padding-top:80px;
   width:100%;
-  min-height:100%;
   display:flex;
   flex-direction: column;
   justify-content:flex-start;
@@ -74,14 +73,14 @@ a{
 }
 
 .gen-btn {
-  color: var(--clr-light);
-  background: none;
-  border: 2px solid var(--clr-gray);
+  color: var(--clr-gray);
+  background-color: var(--clr-light);
+  border: 1px solid var(--clr-gray);
   border-radius: 50%;
   padding: 80px;
   width: 60px;
   height: 60px;
-  margin-top: 10px;
+  margin-top: 100px;
   font-size: 1em;
   display: flex;
   align-items: center;
@@ -91,8 +90,8 @@ a{
 }
 
 .gen-btn:hover {
-  background-color: var(--clr-light);
-  color: var(--clr-dark);
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 .hidden {

@@ -14,12 +14,8 @@ export default function Home() {
                     <p id="name" className="hidden"></p>
                     <p id="bio" className="hidden"></p>
                 </div>
-                <button id="generate" className="gen-btn">generate</button>
+                <button id="generate" className="gen-btn"></button>
             </section>           
-            <h1 className="title">{title}</h1>
-            <p>{description}</p>
-            <h2 className="title">contribute</h2>
-            <p>join us on <a href={github} target="_blank">github</a></p>
         </section>
         <Script src='/main.js'/>
       </main>
